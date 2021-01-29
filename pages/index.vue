@@ -264,7 +264,7 @@ textarea {
 .animated {
   top: 30%;
   position: relative;
-  animation: 3s slide-right;
+  /* animation: 3s slide-right; */
 }
 
 .title {
