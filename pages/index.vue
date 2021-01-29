@@ -8,14 +8,10 @@
           Tree Removal. Trimming & Pruning. Stump Grinding & Removal.
         </div>
         <button>
-          <a href="#quote" style="text-decoration:none;color:white;"
-            >Get A Quote</a
-          >
+          <a class="jumpButton" href="#quote">Get A Quote</a>
         </button>
-        <button>
-          <a href="#services" style="text-decoration:none;color:white;"
-            >Services</a
-          >
+        <button class="jumpButton">
+          <a href="#services" class="jumpButton">Services</a>
         </button>
       </div>
     </div>
@@ -116,7 +112,7 @@
         name="description"
         id=""
         cols="20"
-        rows="10"
+        rows="5"
         placeholder="Enter a description of your needs"
       ></textarea>
       <br />
@@ -165,7 +161,12 @@ button {
   border: groove;
   color: white;
 }
-button:hover {
+.jumpButton {
+  text-decoration: none;
+  color: white;
+}
+.jumpButton:hover {
+  text-decoration: none;
   color: rgb(152, 159, 134);
 }
 .card-images img {
