@@ -13,10 +13,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li>
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="#services">Services</a>
           </li>
         </ul>
       </div>
@@ -73,7 +73,7 @@ export default {
   position: fixed;
   width: 100%;
   display: flex;
-  flex: right;
+
   height: 40px;
   top: 0;
   z-index: 1;

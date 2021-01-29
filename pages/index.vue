@@ -7,11 +7,19 @@
         <div class="small-text">
           Tree Removal. Trimming & Pruning. Stump Grinding & Removal.
         </div>
-        <button>Get A Quote</button>
-        <button>Services</button>
+        <button>
+          <a href="#quote" style="text-decoration:none;color:white;"
+            >Get A Quote</a
+          >
+        </button>
+        <button>
+          <a href="#services" style="text-decoration:none;color:white;"
+            >Services</a
+          >
+        </button>
       </div>
     </div>
-    <div class="services-section">
+    <div id="services" class="services-section">
       <h1>Services Offered</h1>
       <b-card-group deck>
         <b-card
@@ -49,8 +57,20 @@
         </b-card>
       </b-card-group>
     </div>
-    <div class="team-section">
+    <div id="about" class="team-section">
       <h1>Meet the team</h1>
+      <h6>
+        Several years ago, after working for one of the largest tree companies
+        in Charlotte, Justin decided to step away and pursue his life-long goal
+        of owning his own business. Starting with just a pickup truck and a
+        small utility trailer, Justin’s Tree Service has grown into an extremely
+        reputable, professional tree company with all the proper tools and
+        equipment needed to get the job done. Justin’s brother, Brandon, and his
+        father, Greg, are also part of the team along with several other crew
+        members. Justin's Tree Service is dedicated to providing you with
+        top-of-the line tree services while focusing on the safety, health, and
+        beauty of your trees.
+      </h6>
       <div class="images-container">
         <div class="round">
           <div class="showDetails">Justin-Owner/Expert Climber</div>
@@ -87,7 +107,7 @@
         ></b-carousel-slide>
       </b-carousel>
     </div>
-    <div class="quote-section">
+    <div id="quote" class="quote-section">
       <h1>Request A Quote</h1>
       <input type="text" placeholder="Enter your name" />
       <input type="text" placeholder="Enter your email" />
@@ -120,6 +140,7 @@ export default {};
   text-align: center;
   margin-bottom: 20px;
   background-color: #3a4549;
+  color: white;
 }
 .team-section .card-body {
   background-color: #4c5b61;
