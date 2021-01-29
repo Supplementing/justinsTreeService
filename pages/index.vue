@@ -55,7 +55,7 @@
     </div>
     <div id="about" class="team-section">
       <h1>Meet the team</h1>
-      <h6>
+      <p class="aboutFont">
         Several years ago, after working for one of the largest tree companies
         in Charlotte, Justin decided to step away and pursue his life-long goal
         of owning his own business. Starting with just a pickup truck and a
@@ -66,7 +66,7 @@
         members. Justin's Tree Service is dedicated to providing you with
         top-of-the line tree services while focusing on the safety, health, and
         beauty of your trees.
-      </h6>
+      </p>
       <div class="images-container">
         <div class="round">
           <div class="showDetails">Justin-Owner/Expert Climber</div>
@@ -127,6 +127,7 @@ export default {};
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 .team-section {
   width: 100%;
   padding-top: 40px;
@@ -141,9 +142,12 @@ export default {};
 .team-section .card-body {
   background-color: #4c5b61;
 }
+.aboutFont {
+  font-size: 25px;
+}
 
 body {
-  font-family: "Carter One", cursive;
+  font-family: "Bebas Neue", cursive;
   background: #4c5b61;
 }
 b-card {
