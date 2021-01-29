@@ -1,7 +1,7 @@
 <template>
   <div>
+    <Nav class="navigation" />
     <div class="jumbotron">
-      <Nav class="navigation" />
       <div class="animated">
         <h1 class="mainTitle">Justin's Tree Service</h1>
         <div class="small-text">
@@ -51,41 +51,17 @@
     </div>
     <div class="team-section">
       <h1>Meet the team</h1>
-
-      <b-card
-        img-src="https://placekitten.com/300/300"
-        img-alt="Card image"
-        img-left
-        class="mb-3"
-      >
-        <b-card-text>
-          <h2>Justin-Professional Climber</h2>
-          <p>about justin here</p>
-        </b-card-text>
-      </b-card>
-
-      <b-card
-        img-src="https://placekitten.com/300/300"
-        img-alt="Card image"
-        img-right
-      >
-        <b-card-text>
-          <h2>Greg - Ground Crew, Equipment Manager</h2>
-          <p>about greg here</p>
-        </b-card-text>
-      </b-card>
-      <br />
-      <b-card
-        img-src="https://placekitten.com/300/300"
-        img-alt="Card image"
-        img-left
-        class="mb-3"
-      >
-        <b-card-text>
-          <h2>Brandon - Ground Crew, Office Manager</h2>
-          <p>about brandon here</p>
-        </b-card-text>
-      </b-card>
+      <div class="images-container">
+        <div class="round">
+          <div class="showDetails">Justin-Owner/Expert Climber</div>
+        </div>
+        <div class="round">
+          <div class="showDetails">Brandon-Ground Crew/Office Manager</div>
+        </div>
+        <div class="round">
+          <div class="showDetails">Greg-Ground Crew/Equipment Manager</div>
+        </div>
+      </div>
     </div>
     <div class="gallery-section">
       <h1>Gallery</h1>
@@ -119,7 +95,7 @@
       <textarea
         name="description"
         id=""
-        cols="80"
+        cols="20"
         rows="10"
         placeholder="Enter a description of your needs"
       ></textarea>
@@ -136,6 +112,7 @@ export default {};
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
 .team-section {
+  width: 100%;
   padding-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
@@ -148,14 +125,12 @@ export default {};
   background-color: #4c5b61;
 }
 
-.team-section h1 {
-  margin-bottom: 30px;
-  color: white;
-}
-
 body {
   font-family: "Carter One", cursive;
   background: #4c5b61;
+}
+b-card {
+  width: 100%;
 }
 button {
   margin-top: 50px;
@@ -197,6 +172,12 @@ button:hover {
   color: white;
   margin-bottom: 20px;
 }
+.images-container {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .jumbotron {
   background-image: linear-gradient(
       to bottom,
@@ -205,10 +186,37 @@ button:hover {
     ),
     url("../assets/trees.jpg");
   height: 100vh;
+  width: 100%;
   background-size: cover;
   text-align: center;
   color: white;
   text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+  .jumbotron {
+    height: auto;
+  }
+}
+.round {
+  background-image: url("../assets/trees.jpg");
+  background-size: cover;
+  margin: 10px 10px 10px 10px;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+}
+.showDetails {
+  opacity: 0;
+  padding-top: 20%;
+  font-size: 17px;
+}
+.round:hover .showDetails {
+  opacity: 1;
+  background-color: rgba(152, 159, 134, 0.7);
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  color: white;
 }
 .navigation {
   padding-top: 0px;
@@ -232,6 +240,11 @@ button:hover {
   text-align: center;
   margin-bottom: 20px;
   color: white;
+}
+.team-section h1 {
+  margin-bottom: 30px;
+  color: white;
+  width: 100%;
 }
 .quote-section {
   padding-top: 40px;
